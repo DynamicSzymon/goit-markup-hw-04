@@ -11,6 +11,7 @@
   --footerlinks: #ffffff99;
   --productborder: #eeeeee;
   --background: #2f303a66;
+  --social: #afb1b8;
 }
 /* global */
 body {
@@ -25,6 +26,7 @@ body {
 .blue-text:hover,
 .blue-text:focus {
   color: var(--blue);
+  fill: var(--blue);
 }
 .container {
   width: 1200px;
@@ -88,9 +90,14 @@ section {
   gap: 50px;
 }
 .contact-link-style {
+  display: flex;
+  flex-direction: row;
+  color: var(--grey);
+  fill: var(--grey);
   font-weight: 500;
   color: var(--grey);
   letter-spacing: 0.02em;
+  gap: 10px;
 }
 /* top-section */
 .top-section-text {
@@ -99,6 +106,7 @@ section {
   font-size: 44px;
   line-height: 1.365;
   text-align: center;
+  letter-spacing: 0.06em;
   padding: 0 0 30px 0;
   margin: 0;
 }
@@ -108,8 +116,11 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 200px 0;
+  gap: 30px;
   width: 100%;
+  height: 600px;
+  background: rgba(47, 48, 58, 40%) url(/images/bg.jpg);
+  background-blend-mode: darken;
 }
 .top-section-btn {
   color: var(--white);
@@ -304,11 +315,57 @@ section {
   padding: 9px 0;
 }
 /* icons */
-.icon {
-  fill: currentColor;
+.icon-nav {
+  width: 16px;
+  height: 16px;
 }
-
-.evnelope {
-  margin-right: 10px;
-  fill: var(--grey);
+.logo-box {
+  background-color: var(--notwhite);
+}
+.logo-item {
+  margin: 0;
+  padding: 25px 100px;
+}
+.social-box {
+  margin: 0 32px 18px 32px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.social-row {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.icon {
+  cursor: pointer;
+}
+.social-item {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  fill: var(--social);
+}
+.social-item:hover {
+  background-color: var(--blue);
+  fill: var(--white);
+}
+.social-item:focus {
+  background-color: var(--blue);
+  fill: var(--white);
+}
+.clients-row {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.client {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
 }
