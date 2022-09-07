@@ -303,3 +303,11 @@ section {
   line-height: 1.71;
   padding: 9px 0;
 }
+/* icons */
+.icon {
+  fill: currentColor;
+}
+
+.evnelope {
+  fill: var(--grey);
+}
