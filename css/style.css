@@ -309,5 +309,6 @@ section {
 }
 
 .evnelope {
+  margin-right: 10px;
   fill: var(--grey);
 }
