@@ -119,7 +119,7 @@ section {
   width: 100%;
   height: 600px;
   background-image: url(../images/bg.jpg);
-  background-blend-mode: darken;
+  background-blend-mode: difference;
 }
 .top-section-btn {
   color: var(--white);
